@@ -101,6 +101,7 @@
             this.reportViewer6 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.materialListBox1 = new MaterialSkin.Controls.MaterialListBox();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard13.SuspendLayout();
@@ -171,6 +172,7 @@
             // materialCard13
             // 
             this.materialCard13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard13.Controls.Add(this.materialListBox1);
             this.materialCard13.Controls.Add(this.materialCard10);
             this.materialCard13.Controls.Add(this.materialComboBox2);
             this.materialCard13.Controls.Add(this.materialCard9);
@@ -517,7 +519,7 @@
             // 
             this.metroDateTime3.Enabled = false;
             this.metroDateTime3.Location = new System.Drawing.Point(322, 76);
-            this.metroDateTime3.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime3.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTime3.Name = "metroDateTime3";
             this.metroDateTime3.Size = new System.Drawing.Size(286, 30);
             this.metroDateTime3.TabIndex = 9;
@@ -526,7 +528,7 @@
             // 
             this.metroDateTime4.Enabled = false;
             this.metroDateTime4.Location = new System.Drawing.Point(17, 76);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(288, 30);
             this.metroDateTime4.TabIndex = 8;
@@ -615,7 +617,7 @@
             // metroDateTimeMembresia2
             // 
             this.metroDateTimeMembresia2.Location = new System.Drawing.Point(322, 76);
-            this.metroDateTimeMembresia2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeMembresia2.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeMembresia2.Name = "metroDateTimeMembresia2";
             this.metroDateTimeMembresia2.Size = new System.Drawing.Size(286, 30);
             this.metroDateTimeMembresia2.TabIndex = 9;
@@ -624,7 +626,7 @@
             // metroDateTimeMembresia1
             // 
             this.metroDateTimeMembresia1.Location = new System.Drawing.Point(17, 76);
-            this.metroDateTimeMembresia1.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeMembresia1.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeMembresia1.Name = "metroDateTimeMembresia1";
             this.metroDateTimeMembresia1.Size = new System.Drawing.Size(288, 30);
             this.metroDateTimeMembresia1.TabIndex = 8;
@@ -804,7 +806,7 @@
             // metroDateTimeEntrada2
             // 
             this.metroDateTimeEntrada2.Location = new System.Drawing.Point(322, 55);
-            this.metroDateTimeEntrada2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeEntrada2.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeEntrada2.Name = "metroDateTimeEntrada2";
             this.metroDateTimeEntrada2.Size = new System.Drawing.Size(286, 30);
             this.metroDateTimeEntrada2.TabIndex = 9;
@@ -812,7 +814,7 @@
             // metroDateTimeEntrada
             // 
             this.metroDateTimeEntrada.Location = new System.Drawing.Point(17, 55);
-            this.metroDateTimeEntrada.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeEntrada.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeEntrada.Name = "metroDateTimeEntrada";
             this.metroDateTimeEntrada.Size = new System.Drawing.Size(288, 30);
             this.metroDateTimeEntrada.TabIndex = 8;
@@ -1100,6 +1102,20 @@
             this.imageList1.Images.SetKeyName(6, "truck-delivery.png");
             this.imageList1.Images.SetKeyName(7, "pig-money.png");
             // 
+            // materialListBox1
+            // 
+            this.materialListBox1.BackColor = System.Drawing.Color.White;
+            this.materialListBox1.BorderColor = System.Drawing.Color.LightGray;
+            this.materialListBox1.Depth = 0;
+            this.materialListBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialListBox1.Location = new System.Drawing.Point(566, 203);
+            this.materialListBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialListBox1.Name = "materialListBox1";
+            this.materialListBox1.SelectedIndex = -1;
+            this.materialListBox1.SelectedItem = null;
+            this.materialListBox1.Size = new System.Drawing.Size(204, 59);
+            this.materialListBox1.TabIndex = 8;
+            // 
             // InicioReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1235,5 +1251,6 @@
         private MetroFramework.Controls.MetroDateTime metroDateTimeEntrada;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
         private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEntradaSalida;
+        private MaterialSkin.Controls.MaterialListBox materialListBox1;
     }
 }
