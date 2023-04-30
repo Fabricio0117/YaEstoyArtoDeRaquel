@@ -101,6 +101,7 @@
             this.reportViewer6 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.materialCard13.SuspendLayout();
@@ -398,6 +399,7 @@
             // materialCard5
             // 
             this.materialCard5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialCard5.Controls.Add(this.materialButton1);
             this.materialCard5.Controls.Add(this.materialCard22);
             this.materialCard5.Controls.Add(this.materialCard12);
             this.materialCard5.Controls.Add(this.materialCard11);
@@ -615,7 +617,7 @@
             // metroDateTimeMembresia2
             // 
             this.metroDateTimeMembresia2.Location = new System.Drawing.Point(322, 76);
-            this.metroDateTimeMembresia2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeMembresia2.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeMembresia2.Name = "metroDateTimeMembresia2";
             this.metroDateTimeMembresia2.Size = new System.Drawing.Size(286, 30);
             this.metroDateTimeMembresia2.TabIndex = 9;
@@ -624,7 +626,7 @@
             // metroDateTimeMembresia1
             // 
             this.metroDateTimeMembresia1.Location = new System.Drawing.Point(17, 76);
-            this.metroDateTimeMembresia1.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeMembresia1.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeMembresia1.Name = "metroDateTimeMembresia1";
             this.metroDateTimeMembresia1.Size = new System.Drawing.Size(288, 30);
             this.metroDateTimeMembresia1.TabIndex = 8;
@@ -804,7 +806,7 @@
             // metroDateTimeEntrada2
             // 
             this.metroDateTimeEntrada2.Location = new System.Drawing.Point(322, 55);
-            this.metroDateTimeEntrada2.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeEntrada2.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeEntrada2.Name = "metroDateTimeEntrada2";
             this.metroDateTimeEntrada2.Size = new System.Drawing.Size(286, 30);
             this.metroDateTimeEntrada2.TabIndex = 9;
@@ -812,7 +814,7 @@
             // metroDateTimeEntrada
             // 
             this.metroDateTimeEntrada.Location = new System.Drawing.Point(17, 55);
-            this.metroDateTimeEntrada.MinimumSize = new System.Drawing.Size(0, 30);
+            this.metroDateTimeEntrada.MinimumSize = new System.Drawing.Size(4, 30);
             this.metroDateTimeEntrada.Name = "metroDateTimeEntrada";
             this.metroDateTimeEntrada.Size = new System.Drawing.Size(288, 30);
             this.metroDateTimeEntrada.TabIndex = 8;
@@ -1100,6 +1102,25 @@
             this.imageList1.Images.SetKeyName(6, "truck-delivery.png");
             this.imageList1.Images.SetKeyName(7, "pig-money.png");
             // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(418, 232);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(158, 36);
+            this.materialButton1.TabIndex = 12;
+            this.materialButton1.Text = "materialButton1";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
             // InicioReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1124,6 +1145,7 @@
             this.materialCard8.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.materialCard5.ResumeLayout(false);
+            this.materialCard5.PerformLayout();
             this.materialCard22.ResumeLayout(false);
             this.materialCard12.ResumeLayout(false);
             this.materialCard12.PerformLayout();
@@ -1235,5 +1257,6 @@
         private MetroFramework.Controls.MetroDateTime metroDateTimeEntrada;
         private MaterialSkin.Controls.MaterialLabel materialLabel12;
         private MaterialSkin.Controls.MaterialFloatingActionButton btnBuscarEntradaSalida;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
     }
 }
